@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LogoEmpresa.unity
+    guid: 924e01148b7bf0842ba60e445df1b4c8
+  - enabled: 1
+    path: Assets/Scenes/PreloadGame.unity
+    guid: 8710f36a75ab19f4d89dba6d493fed9d
+  - enabled: 1
+    path: Assets/Scenes/MenuGame.unity
+    guid: 7ddc674ef2de46f4aa5ec6625fdb25d8
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 1325a577652694c4fb9508fe6fda2cc0
+  m_configObjects: {}
