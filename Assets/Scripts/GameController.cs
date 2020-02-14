@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -51,7 +50,6 @@ public class GameController : MonoBehaviour
 
     [SerializeField]
     private AudioSource audioRespostaErrada = null;
-
 
     // Start is called before the first frame update
     void Start()
@@ -162,6 +160,13 @@ public class GameController : MonoBehaviour
     private void GameOver()
     {
         UIGameOver();
+        ControllerADSInGame();
+
+        if (scorePlayer > 40)
+        {
+            GooglePlayServices.instance.UnlockIncrementalAchievement(GPGSIds.achievement_love_the_brain_break, 1);
+        }
+        
         GameOverTextBestScore.text = DataController.instance.GetHighScorePlayer().ToString();
         GameOverTextScoreActuaPlayer.text = scorePlayer.ToString();
 
@@ -201,19 +206,27 @@ public class GameController : MonoBehaviour
     }
     public void ResumeGame()
     {
-        GooglePlayServices.instance.UnlockIncrementalAchievement(GPGSIds.achievement_love_the_brain_break, 1);
         SceneManager.LoadScene("Game");
     }
     public void HomeGame()
     {
         SceneManager.LoadScene("MenuGame");
     }
-
+    public void ControllerADSInGame()
+    {
+        int playerHaveDied = PlayerPrefs.GetInt("TimeToPlayerDie") + 1;
+        PlayerPrefs.SetInt("TimeToPlayerDie", playerHaveDied);
+    }
     public void UnlcokArchimentesScore(int scorePlayer)
     {
         if (scorePlayer >= 100)
         {
             GooglePlayServices.instance.UnlocokRegularAchievement(GPGSIds.achievement_little_genius);
+        }
+
+        if (scorePlayer >= 1000)
+        {
+            GooglePlayServices.instance.UnlocokRegularAchievement(GPGSIds.achievement_great_genius);
         }
 
         if (scorePlayer >= 2000)
@@ -226,9 +239,5 @@ public class GameController : MonoBehaviour
             GooglePlayServices.instance.UnlocokRegularAchievement(GPGSIds.achievement_grand_master_brain_break);
         }
 
-        if (scorePlayer >= 1000)
-        {
-            GooglePlayServices.instance.UnlocokRegularAchievement(GPGSIds.achievement_great_genius);
-        }
     }
 }

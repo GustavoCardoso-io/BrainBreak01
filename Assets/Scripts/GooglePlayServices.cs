@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using GooglePlayGames;
+﻿using GooglePlayGames;
 using GooglePlayGames.BasicApi;
-using UnityEngine.SocialPlatforms;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GooglePlayServices : MonoBehaviour
 {
@@ -40,18 +36,13 @@ public class GooglePlayServices : MonoBehaviour
 
             if (success)
             {
-                StartCoroutine(StartGame());
+              Debug.Log("LOGIN: SUCCESS");
             }
             else
             {
                 Debug.Log("LOGIN: FALIDO");
             }
         });
-    }
-    IEnumerator StartGame()
-    {
-        yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("PreloadGame");
     }
 
     #region achievement

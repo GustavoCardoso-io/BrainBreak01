@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using System.IO;
-
+﻿using UnityEngine;
 public class DataController : MonoBehaviour
 {
 
@@ -13,15 +8,7 @@ public class DataController : MonoBehaviour
     private void Awake()
     {
         MakeInstance();
-        StartCoroutine(StartGame());
     }
-
-    IEnumerator StartGame()
-    {
-        yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene("MenuGame");
-    }
-
     void MakeInstance()
     {
 

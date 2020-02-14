@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 562549735}
   - component: {fileID: 562549734}
+  - component: {fileID: 562549736}
   m_Layer: 0
   m_Name: GooglePlay Services
   m_TagString: Untagged
@@ -158,12 +159,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562549733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3105078, y: 0.07206142, z: 2758.1252}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562549736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562549733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd76a7d42561179478c73a5cc07721af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneLoading: PreloadGame
 --- !u!1 &626652413
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +189,6 @@ GameObject:
   - component: {fileID: 626652416}
   - component: {fileID: 626652415}
   - component: {fileID: 626652414}
-  - component: {fileID: 626652417}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -248,18 +261,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &626652417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626652413}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd76a7d42561179478c73a5cc07721af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1883190487
 GameObject:
   m_ObjectHideFlags: 0

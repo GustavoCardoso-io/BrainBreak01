@@ -1359,6 +1359,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1550519223}
+        m_TargetAssemblyTypeName: ADSManager, Assembly-CSharp
+        m_MethodName: ShowAdReward
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: rewardedVideo
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1344512502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,7 +1488,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529741961}
   m_CullTransparentMesh: 0
---- !u!1 &1669382598
+--- !u!1 &1550519222
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1484,40 +1496,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1669382600}
-  - component: {fileID: 1669382599}
+  - component: {fileID: 1550519224}
+  - component: {fileID: 1550519223}
   m_Layer: 0
-  m_Name: GPGS Leadboard
+  m_Name: AD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1669382599
+--- !u!114 &1550519223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669382598}
+  m_GameObject: {fileID: 1550519222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4274b96d9d0ade84e82b0f411ccf258d, type: 3}
+  m_Script: {fileID: 11500000, guid: 96b9f495c1988994aaa53632ac4db35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1669382600
+--- !u!4 &1550519224
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669382598}
+  m_GameObject: {fileID: 1550519222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.5095844, y: -6.4230747, z: 3605.4343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1673358496
 GameObject:
@@ -1928,7 +1940,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1804857147}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: QuitGameButton
         m_Mode: 1
         m_Arguments:
@@ -1936,7 +1948,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: rewardedVideo
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1550519223}
+        m_TargetAssemblyTypeName: ADSManager, Assembly-CSharp
+        m_MethodName: ShowAdReward
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: rewardedVideo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1908289841
@@ -1976,46 +2000,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908289838}
   m_CullTransparentMesh: 0
---- !u!1 &2086225326
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2086225328}
-  - component: {fileID: 2086225327}
-  m_Layer: 0
-  m_Name: GPGS Archivemtns
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2086225327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086225326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a946355cc8e6f7742b11bb992919fc71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2086225328
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086225326}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

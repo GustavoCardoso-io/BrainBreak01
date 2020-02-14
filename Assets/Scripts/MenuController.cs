@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -28,7 +26,6 @@ public class MenuController : MonoBehaviour
     {
         //GPGS Arquivements unlock
         GooglePlayServices.instance.UnlocokRegularAchievement(GPGSIds.achievement_my_first_game);
-        GooglePlayServices.instance.UnlockIncrementalAchievement(GPGSIds.achievement_love_the_brain_break, 1);
 
         tapPlay.Play();
         SceneManager.LoadScene("Game");
