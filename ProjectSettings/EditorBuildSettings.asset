@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PreloadGame.unity
     guid: 8710f36a75ab19f4d89dba6d493fed9d
   - enabled: 1
-    path: Assets/Scenes/MenuGame.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 7ddc674ef2de46f4aa5ec6625fdb25d8
   - enabled: 1
     path: Assets/Scenes/Game.unity

@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.0
+  bundleVersion: 1.2.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -167,7 +167,7 @@ PlayerSettings:
     Android: com.GuGames.BrainBreak
     Standalone: com.uSt.BrainBreak
   buildNumber: {}
-  AndroidBundleVersionCode: 3
+  AndroidBundleVersionCode: 4
   AndroidMinSdkVersion: 22
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
@@ -780,9 +780,11 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Analytics: 1
     Build: 1
-    Collab: 0
+    Collab: 1
     UNet: 1
+    Unity Ads: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -795,9 +797,9 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 50de3cbd-e528-49f2-9515-409d0f8da9d2
+  cloudProjectId: d2b41d66-034e-431b-86ee-7c12574317db
   framebufferDepthMemorylessMode: 0
-  projectName: Brain Break
+  projectName: BrainBreak (1)
   organizationId: gustavo-cardoso-eliseu
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
